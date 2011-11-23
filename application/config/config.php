@@ -1,5 +1,7 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -26,7 +28,7 @@ $config['base_url']	= '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -224,7 +226,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'randomencryptkey1234';
 
 /*
 |--------------------------------------------------------------------------
@@ -357,6 +359,14 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips'] = '';
 
+/*
+|--------------------------------------------------------------------------
+| CSS
+|--------------------------------------------------------------------------
+|
+| create an actual css helper later and remove this.
+|
+*/
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */

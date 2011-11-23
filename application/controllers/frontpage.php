@@ -18,9 +18,9 @@ class Frontpage extends CI_Controller {
 			$data['tlelive_video_company_phone'] = $video->business->phone;
 		}
 		
-		$this->load->view('frontpage', $data);
+		$this->load->view('frontpage/index', $data);
 	}
 }
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+/* End of file frontpage.php */
+/* Location: ./application/controllers/frontpage.php */
