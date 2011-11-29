@@ -48,4 +48,12 @@ class User extends ActiveRecord\Model {
         $CI->load->library('session');
         $CI->session->set_userdata('user_id', $user_id);
     }
+    
+    public static function signout()
+    {
+        $CI =& get_instance();
+        $CI->load->library('session');
+        $CI->session->unset_userdata('user_id');
+    }
+    
 }

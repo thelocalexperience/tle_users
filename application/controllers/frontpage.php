@@ -1,11 +1,9 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Frontpage extends CI_Controller {
+class Frontpage extends MY_Controller {
 
 	public function index()
 	{
-		$this->load->spark('php-activerecord/0.0.2');
-		
 		$videos = Videos::find('all', array('order' => 'RAND()', 'limit' => 1));
 		
 		foreach ($videos as $video) {

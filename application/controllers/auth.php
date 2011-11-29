@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Auth extends CI_Controller {
+class Auth extends MY_Controller {
 
 	public function signin()
 	{
@@ -9,7 +9,7 @@ class Auth extends CI_Controller {
         {
             // Validate they didn't break any rules
             $this->load->library('form_validation');
-            $this->form_validation->set_error_delimiters('<div class="span-6 last error">', '</div>');
+            $this->form_validation->set_error_delimiters('<div class="span-6 last error clear">', '</div>');
             
             $validation_array = array(
                 array(
@@ -33,7 +33,6 @@ class Auth extends CI_Controller {
             }
             else {
                 // Validated correctly
-                $this->load->spark('php-activerecord/0.0.2');
                 
                 // Attempt to sign user in
                 $user = User::validate_signin($_POST['email_address'], $_POST['password']);
@@ -46,8 +45,8 @@ class Auth extends CI_Controller {
                 else
                 {
                     // User failed to sign in
-                    $this->load->library('session');
-                    $this->session->set_flashdata('message','Invalid Email Address and/or Password');
+                    $data['errors'] = "<div class='span-6 last error clear'>Login Failed</div>";
+					$this->load->view('auth/signin', $data);
                 }
             }
         }
@@ -55,11 +54,61 @@ class Auth extends CI_Controller {
         else
             $this->load->view('auth/signin');
 	}
-    
-    public function signup()
-    {
-        $this->load->view('auth/signup');
-    }
+	
+	public function signout()
+	{
+		User::signout();
+		redirect('');
+	}
+	
+	public function signup()
+	{
+		if ($_POST) {
+			$this->load->library('form_validation');
+			$this->form_validation->set_error_delimiters('<div class="span-6 last error clear">', '</div>');
+			
+			$validation_array = array(
+				array(
+					'field' => 'email_address',
+					'label' => 'Email Address',
+					'rules' => 'trim|required|valid_email|is_unique(users.email_address)|xss_clean'
+				),
+				array(
+					'field' => 'password',
+					'label' => 'Password',
+					'rules' => 'trim|required|min_length[4]|max_length[16]|matches[password_confirm]'
+				),
+				array(
+					'field' => 'password_confirm',
+					'label' => 'Password Confirm',
+					'rules' => 'trim|required'
+				)
+			);
+			
+			$this->form_validation->set_rules($validation_array);
+			if ($this->form_validation->run() == FALSE)
+			{
+				// Validation failed 
+				$this->load->view('auth/signup');
+			}
+			else {
+				// Validated correctly
+				
+				$user = User::create(
+					array(
+						'email_address' => $_POST['email_address'],
+						'password' => $_POST['password']
+					)
+				);
+				
+				User::signin($user->id);
+				redirect('');
+			}
+		}
+		else {
+			$this->load->view('auth/signup');
+		}
+	}
 }
 
 /* End of file auth.php */

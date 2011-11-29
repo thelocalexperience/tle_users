@@ -1,2 +1,0 @@
-function flash_errors() {
-}

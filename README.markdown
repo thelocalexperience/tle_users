@@ -2,5 +2,4 @@
 
 _Notes For Tomorrow_
 
-*   Add persistent sessions for 'remember me'
-*   Complete flash_messages helper
+*   Bugged out twitter/facebook auth when adding persistent logins. Rework persistent login method.

@@ -2,8 +2,9 @@
 
     <div id="body" class="span-24 last">
         <h3>Sign Up</div>
+        <?=validation_errors()?>
         <?=form_open()?>
-        <div id="form_element" class="span-6 down10">
+        <div id="form_element" class="span-6 clear down10">
             <div class="span-3 first">Email Address:</div>
             <div class="span-3 last"><?=form_input('email_address')?></div>
         </div>

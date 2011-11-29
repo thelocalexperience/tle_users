@@ -3,7 +3,7 @@
     <div id="body" class="span-24 last">
         <h3>Sign In</div>
         <?=validation_errors()?>
-        <?=flash_messages()?>
+        <?=isset($errors) ? $errors : ''?> 
         <?=form_open()?>
         <div id="form_element" class="span-6 clear down10">
             <div class="span-3 first">Email Address:</div>

@@ -17,7 +17,12 @@
 			<div id="sitename" class="span-20"><h1><a href="<?php echo base_url(); ?>">The Local Experience</a></h1></div>
 			
 			<div id="linkbar" class="span-4 last">
-				<div class="span-2"><a href="<?php echo base_url(); ?>auth/signup" class="rounded">sign up</a></div>
-				<div class="span-2 last"><a href="<?php echo base_url(); ?>auth/signin" class="rounded">sign in</a></div>
+				<?php if ($this->user): ?>
+					<div class="span-2"><a href="<?php echo base_url(); ?>auth/settings" class="rounded">settings</a></div>
+					<div class="span-2 last"><a href="<?php echo base_url(); ?>auth/signout" class="rounded">sign out</a></div>
+				<?php else: ?>
+					<div class="span-2"><a href="<?php echo base_url(); ?>auth/signup" class="rounded">sign up</a></div>
+					<div class="span-2 last"><a href="<?php echo base_url(); ?>auth/signin" class="rounded">sign in</a></div>
+				<?php endif; ?>
 			</div>
 		</div>
