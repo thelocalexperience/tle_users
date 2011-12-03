@@ -1,7 +1,7 @@
 <?php $this->load->view('layouts/header'); ?>
 
     <div id="body" class="span-24 last">
-        <h3>Sign In</div>
+        <h3>Sign In</h3>
         <?=validation_errors()?>
         <?=isset($errors) ? $errors : ''?> 
         <?=form_open()?>

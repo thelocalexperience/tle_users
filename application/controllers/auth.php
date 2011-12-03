@@ -2,15 +2,20 @@
 
 class Auth extends MY_Controller {
 
+	function __construct()
+    {
+        parent::__construct();
+		
+		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<div class="span-6 last error clear">', '</div>');
+	}
+	
 	public function signin()
 	{
         // User submitted signin form
         if ($_POST)
         {
-            // Validate they didn't break any rules
-            $this->load->library('form_validation');
-            $this->form_validation->set_error_delimiters('<div class="span-6 last error clear">', '</div>');
-            
+            // Validate form            
             $validation_array = array(
                 array(
                     'field' => 'email_address',
@@ -64,9 +69,7 @@ class Auth extends MY_Controller {
 	public function signup()
 	{
 		if ($_POST) {
-			$this->load->library('form_validation');
-			$this->form_validation->set_error_delimiters('<div class="span-6 last error clear">', '</div>');
-			
+			// Validate form
 			$validation_array = array(
 				array(
 					'field' => 'email_address',
@@ -107,6 +110,59 @@ class Auth extends MY_Controller {
 		}
 		else {
 			$this->load->view('auth/signup');
+		}
+	}
+	
+	public function settings()
+	{
+		if ($_POST) {
+			// Form has been filled out!
+			$settype = $_POST['settype'];
+			// What setting are we updating?
+			if ($settype == 1)
+			{
+				
+			}
+			
+			elseif ($settype == 2)
+			{
+				
+			}
+			
+			elseif ($settype == 3)
+			{
+				
+			}
+			
+			elseif ($settype == 4)
+			{
+				
+			}
+			
+			else
+			{
+				$this->load->view('auth/settings');
+			}
+		}
+		else {
+			
+			$uriseg = $this->uri->segment(3, "front");
+			
+			switch ($uriseg)
+			{
+				case "front":
+					$this->load->view('auth/settings');
+					break;
+				case "password":
+					$this->load->view('auth/settings-password');
+					break;
+				case "email":
+					$this->load->view('auth/settings-email');
+					break;
+				case "social":
+					$this->load->view('auth/settings-social');
+					break;
+			}
 		}
 	}
 }

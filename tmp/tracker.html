@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9">
+	<title>The Local Experience - Experience Something New</title>
+	
+	<link href="css/tle.core.css" rel="stylesheet" media="screen" />
+	<link href="css/tle.tracker.css" rel="stylesheet" media="screen" />
+	
+	<!--[if IE]>
+		<script type="text/javascript" src="js/html5.js"></script>
+	<![endif]-->
+	
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery.placeholder.js" type="text/javascript"></script>
+	<script src="js/tle.core.js" type="text/javascript"></script>
+	<script src="js/tle.tracker.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<div id="container">
+	<div id="toplinks"><a class="toplinks-business rounded-1 shadowed hidetext" href="http://beta.thelocalexperience.com/business">Business Owners</a><a class="toplinks-hotels rounded-1 shadowed hidetext" href="hotels.html">Hotel Guests</a></div>
+	
+	<header class="rounded-2 shadowed">
+		<hgroup id="identity" class="rounded-2">
+			<a class="tle-logo hidetext" href="#">The Local Experience</a>
+			<ul>
+				<li><a href="signup.html" class="signup">Sign Up</a></li>
+				<li><a href="signin.html" class="signin">Sign In</a></li>
+			</ul>
+		</hgroup>
+		
+		<hgroup id="contexploring" class="rounded-3">
+			<hgroup id="contexploring-input">I want to experience a new...</hgroup>
+			<select name="" class="contexploring-select">
+				<option selected="selected">0</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+			<ul class="contexploring-list shadowed">
+				<li optionval="1" textval="Place to eat">Place to eat</li>
+				<li optionval="2" textval="Place to have fun">Place to have fun</li>
+				<li optionval="3" textval="Place to visit with my family">Place to visit with my family</li>
+			</ul>
+			<hgroup id="contexploring-button">Continue Exploring</hgroup>
+			<p>or... <a href="#">Surprise Me</a></p>
+		</hgroup>
+	</header>
+	
+	<div id="secondrow">
+		<div id="citylocation" class="rounded-2 shadowed">
+			<fieldset id="manlocation">
+				<input type="text" class="manlocation-input" placeholder="Orlando, FL" />
+				<div class="manlocation-button">GO</div>
+			</fieldset>
+		</div>
+		
+		<div id="submenu" class="rounded-2 shadowed">
+			<ul>
+				<li><a href="tracker.html" class="active"><span>Experience Tracker</span></a><div id="tracker-notice">3</div></li>
+				<li><a href="builder.html"><span>Experience Builder</span></a></li>
+			</ul>
+			<hgroup id="submenu-back" class="rounded-2"></hgroup>
+		</div>
+	</div>
+	
+	<div id="thirdrow" class="rounded-2 shadowed">
+		<span>sorting:</span>
+		<ul class="sorting">
+			<li><a href="#" class="active">last updated</a>&nbsp;&nbsp;&nbsp;&nbsp;•</li>
+			<li><a href="#">date added</a>&nbsp;&nbsp;&nbsp;&nbsp;•</li>
+			<li><a href="#">business name</a></li>
+		</ul>
+		<a href="#" class="sort-morning active">Morning</a>
+		<a href="#" class="sort-afternoon">Afternoon</a>
+		<a href="#" class="sort-night">Night</a>		
+	</div>
+	
+	<div class="update-row rounded-2 shadowed">
+		<hgroup id="update-header" class="rounded-6 shadowed">
+			<ul class="update-types">
+				<li><a href="#" class="update-types-deal active">new deal</a></li>
+				<li><a href="#" class="update-types-shout">new shout</a></li>
+				<li><a href="#" class="update-types-calendar">updated calendar</a></li>
+			</ul>
+			
+			<ul class="update-links">
+				<li>+ <a href="profile.html">view profile</a></li>
+				<li>+ <a href="#">add to builder</a></li>
+				<li>+ <a href="#">share with friends</a></li>
+			</ul>
+			
+			<img src="images/icons_close.png" width="24" height="24" class="update-row-close" />
+			<img src="images/speech-down.jpg" width="6" height="6" class="speechdown" />
+		</hgroup>
+		
+		<hgroup id="update-content" class="rounded-1 shadowed">
+			<div class="update-content-deal">
+				<a href="#" class="update-content-print-deal rounded-1">print deal</a>
+				<h1>Amura Japenese Restaurant</h1>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. 
+					<span>Fine Print Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</span>				</p>
+			</div>
+			
+			<div class="update-content-shout">
+				<h1>Shout Back From Amura Japenese Restaurant</h1>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+					<span>-- 10/20/2011 @ 6:45pm</span>	
+				</p>
+			</div>
+			
+			<div class="update-content-calendar">
+				<h1>Amura Japanese Restaurant's Promotional Calendar</h1>
+				<div id="promocalendar">
+					<article>
+						<section class="promocalendar-day">Monday</section>
+						<section class="promocalendar-promo">
+						</section>
+					</article>
+					<article>
+						<section class="promocalendar-day">Tuesday</section>
+						<section class="promocalendar-promo">
+						</section>
+					</article>
+					<article>
+						<section class="promocalendar-day">Wednesday</section>
+						<section class="promocalendar-promo">
+						</section>
+					</article>
+					<article>
+						<section class="promocalendar-day">Thursday</section>
+						<section class="promocalendar-promo active">
+							<span>Sushi and Sake Thursdays.</span><br />
+							$10 Sushi Roll &amp; Sake Shot!
+							</section>
+					</article>
+					<article>
+						<section class="promocalendar-day">Friday</section>
+						<section class="promocalendar-promo">
+						</section>
+					</article>
+					<article>
+						<section class="promocalendar-day">Saturday</section>
+						<section class="promocalendar-promo">
+						</section>
+					</article>
+					<article>
+						<section class="promocalendar-day">Sunday</section>
+						<section class="promocalendar-promo">
+						</section>
+					</article>
+				</div>
+			</div>	
+		</hgroup>
+	</div>
+	
+	<div class="tracker-row">
+		<div class="surprise-listing rounded-2 shadowed" profileid="1" clicktype="update">
+			<span class="surprise-listing-update tracker-green">We Recommend...</span>
+			<div class="surprise-listing-plus"></div>
+			<img src="images/examples_listing-pic.jpg" width="154" height="89" id="surprise-listing-pic" />
+			<img src="images/icons_surprise-pin.jpg" width="12" height="12" id="surprise-listing-pin" />
+			<span class="surprise-listing-name">Amura Japenese Restaurant</span>
+			<span class="surprise-listing-tag">japenese sushi</span>				
+		</div>
+		
+		<div class="surprise-listing rounded-2 shadowed spaced" profileid="1" clicktype="update">
+			<span class="surprise-listing-update tracker-orange">New Deal!</span>
+			<div class="surprise-listing-plus"></div>
+			<img src="images/examples_listing-pic.jpg" width="154" height="89" id="surprise-listing-pic" />
+			<img src="images/icons_surprise-pin.jpg" width="12" height="12" id="surprise-listing-pin" />
+			<span class="surprise-listing-name">Amura Japenese Restaurant</span>
+			<span class="surprise-listing-tag">japenese sushi</span>				
+		</div>
+		
+		<div class="surprise-listing rounded-2 shadowed spaced" profileid="1" clicktype="update">
+			<span class="surprise-listing-update tracker-red">Updated Calendar!</span>
+			<div class="surprise-listing-plus"></div>
+			<img src="images/examples_listing-pic.jpg" width="154" height="89" id="surprise-listing-pic" />
+			<img src="images/icons_surprise-pin.jpg" width="12" height="12" id="surprise-listing-pin" />
+			<span class="surprise-listing-name">Amura Japenese Restaurant</span>
+			<span class="surprise-listing-tag">japenese sushi</span>				
+		</div>
+		
+		<div class="surprise-listing rounded-2 shadowed spaced" profileid="1" clicktype="update">
+			<span class="surprise-listing-update tracker-blue">New Shout!</span>
+			<div class="surprise-listing-plus"></div>
+			<img src="images/examples_listing-pic.jpg" width="154" height="89" id="surprise-listing-pic" />
+			<img src="images/icons_surprise-pin.jpg" width="12" height="12" id="surprise-listing-pin" />
+			<span class="surprise-listing-name">Amura Japenese Restaurant</span>
+			<span class="surprise-listing-tag">japenese sushi</span>				
+		</div>
+		
+		<div class="surprise-listing rounded-2 shadowed spaced" profileid="1" clicktype="update">
+			<span class="surprise-listing-update tracker-white">Many Updates!</span>
+			<div class="surprise-listing-plus"></div>
+			<img src="images/examples_listing-pic.jpg" width="154" height="89" id="surprise-listing-pic" />
+			<img src="images/icons_surprise-pin.jpg" width="12" height="12" id="surprise-listing-pin" />
+			<span class="surprise-listing-name">Amura Japenese Restaurant</span>
+			<span class="surprise-listing-tag">japenese sushi</span>				
+		</div>
+		
+		<div class="surprise-listing rounded-2 shadowed spaced" profileid="1" clicktype="normal">
+			<div class="surprise-listing-plus"></div>
+			<img src="images/examples_listing-pic.jpg" width="154" height="89" id="surprise-listing-pic" />
+			<img src="images/icons_surprise-pin.jpg" width="12" height="12" id="surprise-listing-pin" />
+			<span class="surprise-listing-name">Amura Japenese Restaurant</span>
+			<span class="surprise-listing-tag">japenese sushi</span>				
+		</div>
+	</div>
+	
+	<div class="tracker-row">
+		<div class="surprise-listing rounded-2 shadowed" profileid="1" clicktype="normal">
+			<div class="surprise-listing-plus"></div>
+			<img src="images/examples_listing-pic.jpg" width="154" height="89" id="surprise-listing-pic" />
+			<img src="images/icons_surprise-pin.jpg" width="12" height="12" id="surprise-listing-pin" />
+			<span class="surprise-listing-name">Amura Japenese Restaurant</span>
+			<span class="surprise-listing-tag">japenese sushi</span>				
+		</div>
+		
+		<div class="surprise-listing rounded-2 shadowed spaced" profileid="1" clicktype="normal">
+			<div class="surprise-listing-plus"></div>
+			<img src="images/examples_listing-pic.jpg" width="154" height="89" id="surprise-listing-pic" />
+			<img src="images/icons_surprise-pin.jpg" width="12" height="12" id="surprise-listing-pin" />
+			<span class="surprise-listing-name">Amura Japenese Restaurant</span>
+			<span class="surprise-listing-tag">japenese sushi</span>				
+		</div>
+		
+		<div class="surprise-listing rounded-2 shadowed spaced" profileid="1" clicktype="normal">
+			<div class="surprise-listing-plus"></div>
+			<img src="images/examples_listing-pic.jpg" width="154" height="89" id="surprise-listing-pic" />
+			<img src="images/icons_surprise-pin.jpg" width="12" height="12" id="surprise-listing-pin" />
+			<span class="surprise-listing-name">Amura Japenese Restaurant</span>
+			<span class="surprise-listing-tag">japenese sushi</span>				
+		</div>
+		
+		<div class="surprise-listing rounded-2 shadowed spaced" profileid="1" clicktype="normal">
+			<div class="surprise-listing-plus"></div>
+			<img src="images/examples_listing-pic.jpg" width="154" height="89" id="surprise-listing-pic" />
+			<img src="images/icons_surprise-pin.jpg" width="12" height="12" id="surprise-listing-pin" />
+			<span class="surprise-listing-name">Amura Japenese Restaurant</span>
+			<span class="surprise-listing-tag">japenese sushi</span>				
+		</div>
+	</div>
+		
+	<div class="fpush"></div>
+</div>
+
+<footer>
+	<ul>
+		<li><a href="#">Business Owners</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•</li>
+		<li><a href="#">Hotel Guests</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•</li>
+		<li><a href="#">Terms & Conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•</li>
+		<li><a href="#">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•</li>
+		<li><a href="#">Careers</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•</li>
+		<li class="last"><a href="#">Contact Us</a></li>
+	</ul>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+@charset "utf-8";
+/*
+	---------------------------------------------------------------
+	thelocalexperience.com 10/10/2011
+	---------------------------------------------------------------
+*/
+
+@import url("reset.css");
+
+/* body settings */
+
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: url(../images/background.png) no-repeat top left;
+}
+
+/* global classes */
+
+.shadowed {
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.rounded-2 {
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	-webkit-border-radius: 0px 0px 8px 8px;
+	border-radius: 0px 0px 8px 8px;
+}
+
+.rounded-1 {
+	-moz-border-radius: 8px;
+	-webkit-border: 8px;
+	border-radius: 8px;
+}
+
+.rounded-3 {
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	-webkit-border-radius: 8px 8px 0px 0px;
+	border-radius: 8px 8px 0px 0px;
+}
+
+/* container */
+
+#container {
+	width: 300px;
+	position: relative;
+	margin: 0 auto;
+}
+
+/* header */
+
+header {
+	width: 300px;
+	height: 94px;
+	position: relative;
+	background: #2e2e2e;
+	margin-top: 0px;
+}
+
+header a.tlelogo {
+	width: 273px;
+	height: 41px;
+	position: absolute;
+	top: 20px;
+	left: 15px;
+	background: url(../images/thelocalexperience-alt.jpg) no-repeat;
+	text-indent: -9999px;
+}
+
+header img {
+	position: absolute;
+	top: 69px;
+	right: 13px;
+}
+
+/* containerr */
+
+#business {
+	width: 300px;
+	height: 74px;
+	position: relative;
+	margin-top: 10px;
+	background: #fff;
+}
+
+#business img {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+#business h1 {
+	position: absolute;
+	top: 13px;
+	left: 74px;
+	color: #555;
+	font: bold 14px Arial, Helvetica, sans-serif;
+}
+
+#business p {
+	position: absolute;
+	top: 33px;
+	left: 74px;
+	color:  #bbb;
+	font: normal 12px Arial, Helvetica, sans-serif;
+}
+
+/* actions */
+
+#actions {
+	width: 300px;
+	position: relative;
+	margin-top: 10px;
+}
+
+#actions #top {
+	width: 300px;
+	height: 27px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #2e2e2e;
+	color: #fff;
+	font: bold 12px Arial, Helvetica, sans-serif;
+}
+
+#top p {
+	height: 12px;
+	position: absolute;
+	top: 7px;
+	left: 10px;
+	background: url(../images/icons_surprise-pin.jpg) no-repeat;
+	text-indent: 18px;
+}
+
+#actions #bot {
+	width: 300px;
+	position: absolute;
+	top: 27px;
+	left: 0px;
+	background: #fff;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+#bot p.grey {
+	width: 270px;
+	position: relative;
+	margin-top: 10px;
+	padding: 0 15px 0 15px;
+	color: #555;
+	font: normal 12px Arial, Helvetica, sans-serif;
+}
+
+#bot p.green {
+	width: 270px;
+	position: relative;
+	margin-top: 10px;
+	padding: 0 15px 0 15px;
+	color: #69a87b;
+	font: normal 11px Arial, Helvetica, sans-serif;
+}
+
+
+#bot input.input-text,
+#bot input.input-button {
+	position: relative;
+	margin-top: 10px;
+	margin-left: 10px;
+	border: solid 1px #ccc;
+}
+
+#bot input.input-text {
+	width: 268px;
+	height: 25px;
+	padding-left: 10px;
+	background: url(../images/qrcode-inputbg.jpg) repeat-x;
+	color: #555;
+	font: normal 11px/27px Arial, Helvetica, sans-serif;
+}
+
+#bot input.input-button {
+	width: 278px;
+	height: 28px;
+	text-align: center;
+	background: url(../images/qrcode-buttonbg.jpg) repeat-x;
+	color: #444;
+	font: bold 12px/27px Arial, Helvetica, sans-serif;
+	cursor: pointer;
+}
+	

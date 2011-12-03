@@ -1,0 +1,404 @@
+@charset "utf-8";
+/*
+	---------------------------------------------------------------
+	thelocalexperience.com 10/10/2011
+	---------------------------------------------------------------
+*/
+
+#users-wrap {
+	width: 520px;
+	position: relative;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+#users-header {
+	width: 520px;
+	height: 54px;
+	position: relative;
+	background: #1e1f23 url(../images/users_bg.jpg) repeat-x;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px;
+}
+
+#users-header img {
+	position: absolute;
+	top: 10px;
+	left: 23px;
+}
+
+#users-content {
+	width: 520px;
+	position: relative;
+	margin-top: 10px;
+}
+
+#users-content-t {
+	width: 520px;
+	height: 62px;
+	position: relative;
+	background: #1e1f23 url(../images/users_bg.jpg) repeat-x;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+}
+
+#users-content-t h1 {
+	position: absolute;
+	top: 0px;
+	left: 30px;
+	color: #fff;
+	font: bold 18px/62px Arial, Helvetica, sans-serif;
+	text-shadow: 2px 2px 3px #000000;
+	filter: dropshadow(color=#000000, offx=2, offy=2); 
+}
+
+#users-content-t p {
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	color: #fff;
+	font: normal 12px/62px Arial, Helvetica, sans-serif;
+}
+
+#users-content-t p a {
+	color: #45c753;
+	text-decoration: none;
+}
+
+#users-content-t p a:hover {
+	color: #56f667;
+}
+
+#users-content-b {
+	width: 518px;
+	position: relative;
+	border: solid 1px #ccc;
+	padding-bottom: 20px;
+	background: #fff;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px;
+	overflow: auto;
+}
+
+#users-social {
+	width: 518px;
+	height: 55px;
+	position:  relative;
+	border-bottom: solid 1px #ccc;
+}
+
+#users-social img.facebook {
+	position: absolute;
+	top: 15px;
+	left: 60px;
+}
+
+#users-social img.twitter {
+	position: absolute;
+	top: 15px;
+	right: 60px;
+}
+
+#users-form {
+	width: 230px;
+	position: relative;
+	float: left;
+	margin: 0 0 0 20px;
+	color: #222;
+	font: normal 12px Arial, Helvetica, sans-serif;
+}
+
+#users-form input.text-field {
+	width: 201px;
+	height: 24px;
+	position: relative;
+	margin-top: 10px;
+	background: #fff;
+	border: solid 1px #ccc;
+	padding-left: 10px;
+	-moz-border-radius: 5px;
+	-webkit-border: 5px;
+	border-radius: 5px;
+	color: #333;
+	font: normal 12px/24px Arial, Helvetica, sans-serif;
+}
+
+#users-form input.text-field:hover {
+	border: solid 1px #aaa;
+}
+
+
+#users-form input.text-field:focus {
+	border: solid 1px #777;
+}
+
+#users-form p {
+	width: 220px;
+	position: relative;
+	margin-top: 20px;
+	clear: both;
+}
+
+#users-form p input.input-checkbox {
+	position: relative;
+	float: left;
+	margin-right: 10px;
+}
+
+#users-form p span {
+	position: relative;
+	float: left;
+	font: normal 12px/24px Arial, Helvetica, sans-serif;
+}
+
+input.submit-button {
+	width: 211px;
+	height: 27px;
+	position: relative;
+	margin-top: 20px;
+	border: solid 1px #ccc;
+	background: url(../images/qrcode-buttonbg.jpg) repeat-x;
+	text-align: center;
+	color: #444;
+	font: bold 12px/27px Arial, Helvetica, sans-serif; 
+	clear: both;
+	-moz-border-radius: 5px;
+	-webkit-border: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input.submit-button:hover {
+	border: solid 1px #777;
+}
+
+#users-error {
+	width: 250px;
+	position: relative;
+	float: left;
+	margin-top: 50px;
+}
+
+#users-wrap a {
+	color: #2a8534;
+	text-decoration: underline;
+}
+
+#users-wrap a:hover {
+	text-decoration: none;
+}
+
+
+#users-error #validation-email {
+	width: 250px;
+	min-height: 16px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+
+
+#users-error #validation-password {
+	width: 250px;
+	min-height: 16px;
+	position: absolute;
+	top: 75px;
+	left: 0px;
+	display: none;
+}
+
+
+div.valid {
+	background: url(../images/users_validation-valid.jpg) no-repeat;
+}
+
+div.invalid {
+	background: url(../images/users_validation-invalid.jpg) no-repeat;
+}
+
+#users-error p {
+	width: 225px;
+	position: relative;
+	margin-left: 25px;
+	color: #000;
+	font: normal 12px/20px Arial, Helvetica, sans-serif;
+}
+
+#users-error p.hidep {
+	text-indent: -9999px;
+}
+
+#users-settings {
+	width: 518px;
+	height: 40px;
+	position: relative;
+	background: #efefef;
+	border-bottom: solid 1px #ccc;
+}
+
+#users-setting ul {
+	position: relative;
+}
+
+#users-settings ul li {
+	display: block;
+	float: left;
+	list-style: none;
+	margin-left: 15px;
+	text-shadow: 2px 2px 1px #ffffff;
+	filter: dropshadow(color=#ffffff, offx=2, offy=2); 
+}
+
+#users-settings ul li a {
+	color: #000;
+	font: normal 12px/40px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#users-settings ul li a:hover {
+	text-decoration: underline;
+}
+
+#users-settings ul li a.active {
+	color: #000;
+	font: bold 12px/40px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+#users-settings ul li a.active:hover {
+	text-decoration: none;
+}
+
+#users-settings-form {
+	width: 518px;
+	position: relative;
+}
+
+#users-settings-form.settings-2,
+#users-settings-form.settings-3,
+#users-settings-form.settings-4 {
+	display: none;
+}
+
+#settings-social {
+	width: 478px;
+	position: relative;
+	margin: 0 0 0 20px;
+}
+
+#settings-social h1 {
+	width: 100%;
+	position: relative;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #ccc;
+	font: bold 14px Arial, Helvetica, sans-serif;
+	color: #555;
+	margin-top: 20px;
+	clear: both;
+}
+
+#settings-social p.settings-social-cb {
+	width: 100%;
+	position: relative;
+	margin-top: 10px;
+	clear: both;
+}
+
+#settings-social p.settings-social-jt {
+	width: 100%;
+	position: relative;
+	margin-top: 10px;
+	clear: both;
+	color: #666;
+	font: normal 11px/16px Arial, Helvetica, sans-serif;
+}
+
+#settings-social p.settings-social-cb input.input-checkbox {
+	position: relative;
+	float: left;
+	margin-right: 10px;
+}
+
+#settings-social p.settings-social-cb span {
+	position: relative;
+	float: left;
+	color: #6e6e6e;
+	font: normal 12px/24px Arial, Helvetica, sans-serif;
+}
+
+#settings-social img {
+	position: relative;
+	margin-top: 15px;
+}
+
+#settings-email {
+	width: 478px;
+	position: relative;
+	margin: 20px 0 0 20px;
+}
+
+#settings-email p {
+	width: 100%;
+	position: relative;
+	margin-top: 10px;
+	clear: both;
+}
+
+#settings-email p input.input-radio {
+	position: relative;
+	float: left;
+	margin-right: 10px;
+}
+
+#settings-email p span {
+	position: relative;
+	float: left;
+	color: #6e6e6e;
+	font: normal 12px/24px Arial, Helvetica, sans-serif;
+}
+
+#settings-email ul {
+	padding: 3px;
+	position: relative;
+	margin-left: 25px;
+	background: #f2f2f2;
+	overflow: auto;
+	-moz-border-radius: 5px;
+	-webkit-border: 5px;
+	border-radius: 5px;
+}
+
+#settings-email ul li {
+	display: block;
+	list-style: none;
+	float: left;
+	color: #666;
+	font: normal 11px/24px Arial, Helvetica, sans-serif;
+	margin-right: 15px;
+}
+
+#settings-email ul li input.input-checkbox {
+	position: relative;
+	float: left;
+	margin-right: 5px;
+}
+
+#settings-email ul li span {
+	position: relative;
+	float: left;
+}
+	

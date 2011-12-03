@@ -1,7 +1,7 @@
 <?php $this->load->view('layouts/header'); ?>
 
     <div id="body" class="span-24 last">
-        <h3>Sign Up</div>
+        <h3>Sign Up</h3>
         <?=validation_errors()?>
         <?=form_open()?>
         <div id="form_element" class="span-6 clear down10">

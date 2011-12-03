@@ -43,6 +43,8 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 |
 */
 
+define('DEFAULT_AREA_ID', 1);
+define('DEFAULT_AREA_NAME', 'Melbourne, FL');
 
 /* End of file constants.php */
 /* Location: ./application/config/constants.php */

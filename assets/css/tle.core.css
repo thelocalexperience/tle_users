@@ -1,0 +1,256 @@
+@charset "utf-8";
+/*
+	---------------------------------------------------------------
+	thelocalexperience.com 10/10/2011
+	---------------------------------------------------------------
+*/
+
+@import url("reset.css");
+
+/* body settings */
+
+html, body {
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	background: url(../images/background.png) no-repeat top left;
+}
+
+/* global classes */
+
+.shadowed {
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.rounded-1 {
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	-webkit-border-radius: 0px 0px 8px 8px;
+	border-radius: 0px 0px 8px 8px;
+}
+
+.rounded-2 {
+	-moz-border-radius: 8px;
+	-webkit-border: 8px;
+	border-radius: 8px;
+}
+
+.rounded-3 {
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 8px;
+	-moz-border-radius-bottomright: 8px;
+	-moz-border-radius-bottomleft: 0px;
+	-webkit-border-radius: 0px 8px 8px 0px;
+	border-radius: 0px 8px 8px 0px;
+}
+
+.rounded-4 {
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 8px;
+	-webkit-border-radius: 8px 0px 0px 8px;
+	border-radius: 8px 0px 0px 8px;
+}
+
+.rounded-5 {
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 8px;
+	-moz-border-radius-bottomleft: 0px;
+	-webkit-border-radius: 0px 0px 8px 0px;
+	border-radius: 0px 0px 8px 0px;
+}
+
+.rounded-6 {
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	-webkit-border-radius: 8px 8px 0px 0px;
+	border-radius: 8px 8px 0px 0px;
+}
+
+
+.hidetext {
+	text-indent: -9999px;
+}
+
+/* container */
+
+#container {
+	width: 976px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -40px;
+	position: relative;
+}
+
+/* top links */
+
+#toplinks {
+	width: 976px;
+	height: 40px;
+	position: relative;
+}
+
+#toplinks a.toplinks-business {
+	width: 159px;
+	height: 40px;
+	position: absolute;
+	top: 0px;
+	right: 143px;
+	background: url(../images/absolutemenu_business.jpg) no-repeat 0 0;
+}
+
+#toplinks a.toplinks-hotels {
+	width: 133px;
+	height: 40px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: url(../images/absolutemenu_hotels.jpg) no-repeat 0 0;
+}
+
+#toplinks a.toplinks-home {
+	width: 133px;
+	height: 40px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: url(../images/absolutemenu_home.jpg) no-repeat 0 0;
+}
+
+#toplinks a.toplinks-business:hover {
+	background: url(../images/absolutemenu_business.jpg) no-repeat 0 -40px;
+}
+
+#toplinks a.toplinks-hotels:hover {
+	background: url(../images/absolutemenu_hotels.jpg) no-repeat 0 -40px;
+}
+
+#toplinks a.toplinks-home:hover {
+	background: url(../images/absolutemenu_home.jpg) no-repeat 0 -40px;
+}
+
+/* header */
+
+header {
+	width: 976px;
+	height: 100px;
+	position: relative;
+	margin-top: 15px;
+	z-index: 1000;
+}
+
+hgroup#identity {
+	width: 312px;
+	height: 100px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #2e2e2e;
+	z-index: 10;
+}
+
+hgroup#identity a.tle-logo {
+	width: 273px;
+	height: 41px;
+	position: absolute;
+	top: 14px;
+	left: 18px;
+	background: url(../images/thelocalexperience.jpg) no-repeat 0 0;
+}
+
+hgroup#identity a.tle-logo:hover {
+	background: url(../images/thelocalexperience.jpg) no-repeat 0px -41px;
+}
+
+hgroup#identity ul {
+	position: absolute;
+	top: 65px;
+	left: 127px;
+	padding: 0;
+	margin: 0;
+}
+
+hgroup#identity ul li {
+	display: block;
+	list-style: none;
+	float: left;
+	font-size: 18px;
+	margin-left: 22px;
+}
+
+hgroup#identity ul li a {
+	color: #888;
+	text-decoration: none;
+}
+
+hgroup#identity ul li a:hover {
+	color: #ddd;
+}
+
+/* footer */
+
+footer {
+	width: 100%;
+	*width: 99.9%;
+	background: url(../images/pixel.png) repeat;
+	
+}
+
+footer,
+.fpush {
+	height: 40px;
+}
+
+footer ul {
+	width: 806px;
+	height: 40px;
+	position: relative;
+	margin: 0 auto;
+}
+
+footer ul li {
+	height: 40px;
+	display: block;
+	float: left;
+	list-style: none;
+	margin-right: 20px;
+	color: #8effad;
+	font: bold 14px/40px Arial, Helvetica, sans-serif;
+}
+
+footer ul li a {
+	color: #dfdfdf;
+	text-decoration: none;
+}
+
+footer ul li a:hover {
+	color: #fff;
+}
+
+footer ul li.last {
+	margin-right: 0px;
+}
+
+/* tracker notice */
+
+#tracker-notice {
+	width: 22px;
+	height: 19px;
+	position: relative;
+	float: right;
+	margin-top: -20px;
+	margin-left: -18px;
+	background: url(../images/icons_notice.jpg) no-repeat;
+	text-align: center;
+	color: #ff6565;
+	font: bold 10px/19px Arial, Helvetica, sans-serif;
+	z-index: 100;
+}

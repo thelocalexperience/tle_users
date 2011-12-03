@@ -1,0 +1,382 @@
+@charset "utf-8";
+/*
+	---------------------------------------------------------------
+	thelocalexperience.com 10/10/2011
+	---------------------------------------------------------------
+*/
+
+hgroup#testimonials {
+	width: 674px;
+	height: 100px;
+	position: absolute;
+	top: 0px;
+	left: 302px;
+}
+
+hgroup#testimonials #testimonials-words {
+	width: 542px;
+	height: 100px;
+	position: relative;
+	float: left;
+	background-color: #fff;
+	background-repeat: no-repeat;
+}
+
+hgroup#testimonials #testimonials-pic {
+	width: 132px;
+	height: 100px;
+	position: relative;
+	float: left;
+	background-repeat: no-repeat;
+}
+
+/* rows */
+
+#secondrow {
+	width: 976px;
+	height: 170px;
+	position: relative;
+	margin-top: 20px;
+}
+
+/* city location */
+
+#citylocation {
+	width: 312px;
+	height: 170px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #2e2e2e;
+}
+
+#citylocation #geolocate {
+	width: 270px;
+	height: 32px;
+	position: absolute;
+	top: 26px;
+	left: 20px;
+	background: #bbb;
+	border: solid 1px #828282;
+	text-align: center;
+	color: #fff;
+	font: bold 14px/32px Arial, Helvetica, sans-serif;
+	cursor: pointer;
+}
+
+#citylocation #geolocate:hover {
+	background: #20ba4c;
+	border: solid 1px #1ca042;
+}
+
+#citylocation p.or {
+	position: absolute;
+	top: 72px;
+	left: 140px;
+	color: #888;
+	font: normal 18px Arial, Helvetica, sans-serif;
+}
+
+#citylocation fieldset#manlocation {
+	position: absolute;
+	top: 113px;
+	left: 20px;
+}
+
+fieldset#manlocation .manlocation-input {
+	width: 185px;
+	height: 30px;
+	position: relative;
+	padding: 0 0 0 10px;
+	margin: 0;
+	float: left;
+	border: solid 1px #9b9b9b;
+	background: #fff;
+	font: normal 18px/30px Arial, Helvetica, sans-serif;
+	color: #ccc;
+}
+
+fieldset#manlocation .manlocation-input:focus {
+	color: #333;
+}
+
+fieldset#manlocation .manlocation-button {
+	width: 68px;
+	height: 30px;
+	position: relative;
+	float: left;
+	margin-left: 5px;
+	background: #bbb;
+	border: solid 1px #828282;
+	cursor: pointer;
+	text-align: center;
+	font: normal 18px/30px Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+
+fieldset#manlocation .manlocation-button:hover {
+	background: #20ba4c;
+	border: solid 1px #1ca042;
+}
+
+/* start exploring */
+
+#startexploring {
+	width: 644px;
+	height: 88px;
+	position: absolute;
+	top: 0px;
+	left: 332px;
+	background: #2e2e2e;
+	z-index: 1000;
+}
+
+hgroup#startexploring-input {
+	width: 393px;
+	height: 40px;
+	position: absolute;
+	top: 23px;
+	left: 25px;
+	padding-left: 10px;
+	background: #fff url(../images/select.jpg) no-repeat 382px 19px;
+	border: solid 1px #acadb2;
+	color: #c8c8c8;
+	font: normal 18px/40px Arial, Helvetica, sans-serif;
+	cursor: pointer;
+}
+
+#startexploring select {
+	display: none;
+}
+
+#startexploring ul.startexploring-list {
+	width: 403px;
+	display: none;
+	position: absolute;
+	top: 64px;
+	left: 25px;
+	background: #fff;
+	border: solid 1px #acadb2;
+	color: #c8c8c8;
+	font: normal 18px Arial, Helvetica, sans-serif;
+	cursor: pointer;
+	z-index: 100;
+}
+
+#startexploring ul.startexploring-list li {
+	width: 383px;
+	display: block;
+	list-style: none;
+	margin: 10px;
+}
+
+#startexploring ul.startexploring-list li:hover {
+	color: #444;
+}
+
+hgroup#startexploring-button {
+	width: 178px;
+	height: 40px;
+	position: absolute;
+	top: 23px;
+	left: 440px;
+	background: #20ba4c;
+	border: solid 1px #1ca042;
+	text-align: center;
+	color: #fff;
+	font: bold 18px/40px Arial, Helvetica, sans-serif;
+	cursor: pointer;
+}
+
+hgroup#startexploring-button:hover {
+	background: #21d454;
+	border: solid 1px #22ba4d;
+}
+
+/* sub links */
+
+#surprise {
+	width: 317px;
+	height: 60px;
+	position: absolute;
+	top: 108px;
+	left: 332px;
+	cursor: pointer;
+}
+
+#tlelive {
+	width: 317px;
+	height: 60px;
+	position: absolute;
+	top: 108px;
+	left: 659px;
+	cursor: pointer;
+}
+
+hgroup#surprise-icon {
+	width: 64px;
+	height: 60px;
+	position: relative;
+	float: left;
+	background: url(../images/icons_surpriseme.jpg) no-repeat 0 0;
+	z-index: 10;
+}
+
+hgroup#tlelive-icon {
+	width: 64px;
+	height: 60px;
+	position: relative;
+	float: left;
+	background: url(../images/icons_tlelive.jpg) no-repeat 0 0;
+	z-index: 10;
+}
+
+hgroup#surprise-text,
+hgroup#tlelive-text {
+	width: 263px;
+	height: 60px;
+	position: relative;
+	float: left;
+	margin-left: -10px;
+	background: url(../images/pixel2.png) repeat;
+	color: #e2e2e2;
+	font: normal 18px/60px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-indent: 20px;
+}
+
+/* live experience */
+
+#theliveexperience {
+	width: 976px;
+	height: 217px;
+	position: relative;
+	margin-bottom: 20px;
+	margin-top: 15px;
+	display: none;
+}
+
+hgroup#theliveexperience-refresh {
+	width: 66px;
+	height: 73px;
+	position: absolute;
+	top: 75px;
+	left: 242px;
+	background: url(../images/icons_more.png) no-repeat 0 0;
+	cursor: pointer;
+}
+
+hgroup#theliveexperience-refresh:hover {
+	background: url(../images/icons_more.png) no-repeat 0 -73px;
+}
+
+hgroup#theliveexperience-video {
+	width: 644px;
+	height: 217px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+hgroup#theliveexperience-video #theliveexperience-video-left {
+	width: 382px;
+	height: 217px;
+	position: relative;
+	float: left;
+	background: #2e2e2e;
+}
+
+hgroup#theliveexperience-video #theliveexperience-video-right {
+	width: 262px;
+	height: 217px;
+	position: relative;
+	float: left;
+	background: #fff;
+}
+
+#theliveexperience-video-right #theliveexperience-video-right-links {
+	width: 254px;
+	height: 51px;
+	position: absolute;
+	padding-left: 8px;
+	left: 0px;
+	bottom: 0px;
+	background: #d6ffe2;
+}
+
+#theliveexperience-video-right-links a.theliveexperience-video-right-links-bubble {
+	width: 69px;
+	height: 33px;
+	position: relative;
+	float: left;
+	margin: 9px 0 0 10px;
+	background: #b4d5be;
+	text-align: center;
+	color: #fff;
+	font: bold 14px/33px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+#theliveexperience-video-right-links a.theliveexperience-video-right-links-bubble:hover {
+	background: #6a9678;
+}
+
+#theliveexperience-video-right p {
+	width: 232px;
+	position: relative;
+	margin: 15px 0 0 15px;
+	padding-bottom: 12px;
+	border-bottom: solid 1px #d5d5d5;
+	color: #2e2e2e;
+	font: normal 12px Arial, Helvetica, sans-serif;
+}
+
+#theliveexperience-video-right #theliveexperience-video-right-bot {
+	width: 232px;
+	position: relative;
+	margin: 10px 0 0 15px;
+}
+
+#theliveexperience-video-right-bot img {
+	position: relative;
+	float: left;
+	margin-right: 5px;
+}
+
+#theliveexperience-video-right-bot #theliveexperience-video-right-bot-save {
+	width: 208px;
+	position: relative;
+	float: left;
+	color: #2e2e2e;
+	margin-top: 3px;
+	font: bold 11px Arial, Helvetica, sans-serif;
+}
+
+#theliveexperience-video-right p span {
+	font: bold 14px Arial, Helvetica, sans-serif;
+}
+
+#theliveexperience-video-right p a,
+#theliveexperience-video-right-bot-save a {
+	color: #21bf4d;
+	font: bold 11px Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+#theliveexperience-video-right p a:hover,
+#theliveexperience-video-right-bot-save a:hover {
+	text-decoration: underline;
+}
+
+img.theliveexperience-close {
+	position: absolute;
+	top: -10px;
+	right: 0px;
+	cursor: pointer;
+	z-index: 10;
+}
+
+#theliveexperience-video-left img { /* remove this later */
+	margin: 7px 0 0 7px;
+}
+
