@@ -12,7 +12,12 @@ class MY_Controller extends CI_Controller {
         if (isset($this->session->userdata['user_id'])) $this->user = User::find($this->session->userdata['user_id']);
         
         if (get_cookie('tle_area_id')) {
-            $new_area_info = explode("|", get_cookie('tle_area_id'));
+            $cookie_exp = explode('|', get_cookie('tle_area_id'));
+            $this->session->set_userdata('area_id', $cookie_exp[0]);
+            $this->session->set_userdata('area_title', $cookie_exp[1]);
+        } else {
+            $this->session->set_userdata('area_id', DEFAULT_AREA_ID);
+            $this->session->set_userdata('area_title', DEFAULT_AREA_NAME);
         }
     }
 }

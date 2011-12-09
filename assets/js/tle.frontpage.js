@@ -1,20 +1,6 @@
 /* js */
 
 $(document).ready(function() {
-	var testnum = Math.floor(Math.random() * (2 - 1 + 1) + 1);
-	
-	if (testnum == 1) {
-		$('#testimonials-words').css('background-image','url(../assets/images/testimonials_1-words.jpg)');
-		$('#testimonials-words').css('background-position','37px 14px');
-		$('#testimonials-pic').css('background-image','url(../assets/images/testimonials_1-pic.jpg)');
-	}
-	
-	if (testnum == 2) {
-		$('#testimonials-words').css('background-image','url(../assets/images/testimonials_2-words.jpg)');
-		$('#testimonials-words').css('background-position','87px 24px');
-		$('#testimonials-pic').css('background-image','url(../assets/images/testimonials_2-pic.jpg)');
-	}
-	
 	/* FRONTPAGE BUTTONS */
 	$('#surprise').mouseover(function() {
 		$('#surprise-icon').css('background-position','0 -60px');
@@ -49,10 +35,6 @@ $(document).ready(function() {
 	$('#theliveexperience-refresh').click(function() {
 		$('#theliveexperience').fadeOut(700);
 		$('#theliveexperience').fadeIn(700);
-	});
-	
-	$('#surprise').click(function() {
-		window.location = 'surprise.html';
 	});
 	
 	/* DROPDOWN LIST CONTROLS */

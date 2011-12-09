@@ -21,13 +21,25 @@ $(document).ready(function() {
 	});
 	
 	$('#submenu-refresh').click(function() {
-		$('.listings-container').fadeOut(500);
-		$('.listings-container').fadeIn(500);
+		$('.listings-container').html('');
+		$('.listings-container').html('<div id="loading-ajax" class="rounded-2 shadowed">Loading New Experiences...</div>');
+		var explore_option = $('.explore-page-val').val();
+		var area_id = $('.area_id').val();
+		$.post('http://localhost/explore/grab', { "explore-opt": explore_option, "area_id": area_id }, function(data) {
+			$('.listings-container').html('');
+			$('.listings-container').html(data);
+		});
 	});
 	
 	$('a.view-more').click(function() {
-		$('.listings-container').fadeOut(500);
-		$('.listings-container').fadeIn(500);
+		$('.listings-container').html('');
+		$('.listings-container').html('<div id="loading-ajax" class="rounded-2 shadowed">Loading New Experiences...</div>');
+		var explore_option = $('.explore-page-val').val();
+		var area_id = $('.area_id').val();
+		$.post('http://localhost/explore/grab', { "explore-opt": explore_option, "area_id": area_id }, function(data) {
+			$('.listings-container').html('');
+			$('.listings-container').html(data);
+		});
 	});
 	
 	$('body').click(function(event) {

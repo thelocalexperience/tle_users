@@ -23,14 +23,14 @@
 <body>
 
 <div id="container">
-	<div id="toplinks"><a class="toplinks-business rounded-1 shadowed hidetext" href="http://beta.thelocalexperience.com/business">Business Owners</a><a class="toplinks-hotels rounded-1 shadowed hidetext" href="hotels.html">Hotel Guests</a></div>
+	<div id="toplinks"><a class="toplinks-business rounded-1 shadowed hidetext" href="<?=BUSINESS_URL?>">Business Owners</a><a class="toplinks-hotels rounded-1 shadowed hidetext" href="<?=HOTELS_URL?>">Hotel Guests</a></div>
 	
 	<header class="rounded-2 shadowed">
 		<hgroup id="identity" class="rounded-2">
-			<a class="tle-logo hidetext" href="#">The Local Experience</a>
+			<a class="tle-logo hidetext" href="<?=base_url()?>">The Local Experience</a>
 			<ul>
-				<li><a href="signup.html" class="signup">Sign Up</a></li>
-				<li><a href="signin.html" class="signin">Sign In</a></li>
+				<li><a href="<?=base_url()?>auth/signup" class="signup">Sign Up</a></li>
+				<li><a href="<?=base_url()?>auth/signin" class="signin">Sign In</a></li>
 			</ul>
 		</hgroup>
 	

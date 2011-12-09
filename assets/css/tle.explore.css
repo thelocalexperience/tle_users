@@ -145,7 +145,7 @@ hgroup#contexploring-button:hover {
 	width: 976px;
 	height: 40px;
 	position: relative;
-	margin-top: 10px;
+	margin-top: 0px;
 	margin-bottom: 20px;
 }
 
@@ -465,7 +465,7 @@ hgroup#listing ul li a:hover {
 	height: 60px;
 	position: relative;
 	margin-top: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 hgroup#free-listing {

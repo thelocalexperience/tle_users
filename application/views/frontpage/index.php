@@ -1,7 +1,6 @@
 <?=$this->load->view('layouts/header');?>
-
-	<?php echo var_export(unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip='.$_SERVER['REMOTE_ADDR']))); ?>
-	<hgroup id="testimonials">
+		
+		<hgroup id="testimonials">
 			<div id="testimonials-words"></div>
 			<div id="testimonials-pic" class="rounded-3"></div>
 		</hgroup>
@@ -12,16 +11,17 @@
 			<div id="geolocate">Use Current Location</div>
 			<p class="or">- or -</p>
 			<fieldset id="manlocation">
-				<input type="text" class="manlocation-input" placeholder="Orlando, FL" />
+				<input type="text" class="manlocation-input" placeholder="<?=$this->session->userdata('area_title')?>" />
 				<div class="manlocation-button">GO</div>
 			</fieldset>
 		</div>
 		
 		<div id="startexploring" class="rounded-2 shadowed">
+			<form action="<?=base_url()?>explore" method="post" id="form_explore">
+			<input type="hidden" name="area_id" value="<?=$this->session->userdata('area_id')?>" class="area_id" />
 			<hgroup id="startexploring-input">I want to experience a new...</hgroup>
-			<select name="" class="startexploring-select">
-				<option selected="selected">0</option>
-				<option>1</option>
+			<select name="explore-opt" class="startexploring-select">
+				<option selected="selected">1</option>
 				<option>2</option>
 				<option>3</option>
 			</select>
@@ -31,11 +31,12 @@
 				<li optionval="3" textval="Place to visit with my family">Place to visit with my family</li>
 			</ul>
 			<hgroup id="startexploring-button">Start Exploring</hgroup>
+			</form>
 		</div>
 
 		<div id="surprise" class="rounded-2 shadowed">
-			<hgroup id="surprise-icon" class="rounded-2"></hgroup>
-			<hgroup id="surprise-text" class="rounded-3">Surprise Me</hgroup>
+			<a id="surprise-icon" href="<?=base_url()?>surprise" class="rounded-2"></a>
+			<a id="surprise-text" href="<?=base_url()?>surprise" class="rounded-3">Surprise Me</a>
 		</div>
 
 		<div id="tlelive" class="rounded-2 shadowed">
@@ -71,3 +72,5 @@
 			</div>
 		</hgroup>
 	</div>
+	
+<?=$this->load->view('layouts/footer');?>

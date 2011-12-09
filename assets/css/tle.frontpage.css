@@ -18,8 +18,7 @@ hgroup#testimonials #testimonials-words {
 	height: 100px;
 	position: relative;
 	float: left;
-	background-color: #fff;
-	background-repeat: no-repeat;
+	background: #fff url(../images/testimonials_1-words.jpg) no-repeat 37px 20px;
 }
 
 hgroup#testimonials #testimonials-pic {
@@ -27,7 +26,7 @@ hgroup#testimonials #testimonials-pic {
 	height: 100px;
 	position: relative;
 	float: left;
-	background-repeat: no-repeat;
+	background: url(../images/testimonials_2-pic.jpg) no-repeat;
 }
 
 /* rows */
@@ -213,7 +212,7 @@ hgroup#startexploring-button:hover {
 	cursor: pointer;
 }
 
-hgroup#surprise-icon {
+#surprise-icon {
 	width: 64px;
 	height: 60px;
 	position: relative;
@@ -231,7 +230,7 @@ hgroup#tlelive-icon {
 	z-index: 10;
 }
 
-hgroup#surprise-text,
+#surprise-text,
 hgroup#tlelive-text {
 	width: 263px;
 	height: 60px;
@@ -243,6 +242,7 @@ hgroup#tlelive-text {
 	font: normal 18px/60px Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	text-indent: 20px;
+	text-decoration: none;
 }
 
 /* live experience */

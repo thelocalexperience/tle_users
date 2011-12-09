@@ -4,7 +4,31 @@ class Frontpage extends MY_Controller {
 
 	public function index()
 	{
-
+        //$business_new = Business::create(array(
+        //    'client_id' => 36,
+        //    'area_id' => 1,
+        //    'company_name' => "Foo Bar",
+        //    'hours' => 'mon-fri 8-10pm',
+        //    'address' => '333 test st.',
+        //    'city' => 'Melbourne',
+        //    'state' => 'FL',
+        //    'zipcode' => '3333',
+        //    'phone' => '321-555-5555',
+        //    'c_name' => 'Joey',
+        //    'c_number' => '321-222-2222',
+        //    'c_title' => 'CEO',
+        //    'tags_listing' => 'Lounge',
+        //    'tags_profile' => 'test1,test2,test3',
+        //    'tags_admin' => '',
+        //    'image_listing' => 'examples_listing-pic.jpg',
+        //    'image_logo' => 'image2',
+        //    'categories' => '4',
+        //    'modules' => '1,2,3,4',
+        //    'website' => 'http://www.test.com',
+        //    'social' => 'fb=>http://www.facebook.com,tw=>http:/www.twitter.com',
+        //    'localstory' => 'lorem ipsum blah blah blah'
+        //));
+        
 		$videos = Videos::find('all', array('order' => 'RAND()', 'limit' => 1));
 		
 		foreach ($videos as $video) {

@@ -5,7 +5,7 @@ $(document).ready(function() {
 	$("input[placeholder], textarea[placeholder]").enablePlaceholder();
 	
 	$('#startexploring-button').click(function() {
-		window.location = 'explore.html';
+		$('#form_explore').submit();
 	});
 	/* IMAGE CYCLER (MAY NOT BE USED) */
 	$('img[switch]').hover(function() {
@@ -16,17 +16,28 @@ $(document).ready(function() {
 	
 	$('#contexploring a').click(function() {
 		if ($(this).hasClass('hotel-s')) { window.location = 'hotels-surprise.html'; }
-		else { window.location = 'surprise.html'; }
+		else { window.location = 'http://localhost/surprise'; }
 	});
 	
 	$('#contexploring-button').click(function() {
-		window.location = 'explore.html';
+		$('#form_explore').submit();
 	});
 	
 	$('#submenu-back').click(function() {
 		parent.history.back();
         return false;
 	});
+	
+	$('.manlocation-button').click(function() {
+		var inputlocation = $('.manlocation-input').val();
+		if (!inputlocation) { inputlocation = "Melbourne, FL"; }
+		$.post('http://localhost/location', { "input-location": inputlocation }, function(data) {
+			$('body').css('background','url(' + data.area_bg + ')');
+			$('.manlocation-input').val(data.area_name);
+			$('.manlocation-input').css('color','#2e2e2e');
+			$('.area_id').val(data.area_id);
+		});
+	})
 	
 	$('#geolocate').click(function() {
 		 $.getJSON("http://localhost/geolocate",
